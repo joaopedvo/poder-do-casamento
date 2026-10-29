@@ -1,0 +1,33 @@
+/* Subtle architectural textures and warm light, shared across all pages. */
+.page .s-wine{
+background-color:#30191d;
+background-image:radial-gradient(ellipse at 95% 12%,rgba(164,83,87,.24),transparent 58%),repeating-linear-gradient(90deg,transparent 0 95px,rgba(216,181,139,.045) 95px 96px),linear-gradient(145deg,#351c21,#231316);
+}
+.page .s-wine-2{
+background-color:#3c2227;
+background-image:radial-gradient(circle at 12% 85%,rgba(170,90,78,.2),transparent 52%),radial-gradient(rgba(216,181,139,.12) .7px,transparent .9px),linear-gradient(130deg,#45282d,#2c191e);
+background-size:auto,22px 22px,auto;
+}
+.page .s-brick{
+background-color:#773b42;
+background-image:radial-gradient(ellipse at 12% 0,rgba(237,177,148,.16),transparent 65%),repeating-linear-gradient(135deg,transparent 0 46px,rgba(255,231,208,.045) 46px 47px),linear-gradient(120deg,#85464b,#603039);
+}
+.page .s-cream{
+background-color:#f2e9dc;
+background-image:radial-gradient(ellipse at 95% 5%,rgba(209,168,127,.25),transparent 62%),radial-gradient(rgba(116,69,54,.12) .6px,transparent .9px),linear-gradient(140deg,#faf5ec,#eee1d2);
+background-size:auto,20px 20px,auto;
+}
+.page:not(#p-home) .hero{
+background-image:radial-gradient(ellipse at 90% 20%,rgba(165,85,89,.3),transparent 62%),linear-gradient(125deg,#28171b,#48252d);
+}
+#p-home .hero{
+background-image:radial-gradient(ellipse at 80% 15%,rgba(196,143,111,.24),transparent 60%),linear-gradient(120deg,#faf4e9,#ecddcc);
+}
+.page .final{
+background-image:radial-gradient(ellipse at 50% 100%,rgba(210,152,113,.16),transparent 65%),repeating-radial-gradient(ellipse at 100% 100%,transparent 0 68px,rgba(216,181,139,.065) 69px 70px,transparent 71px 138px),linear-gradient(135deg,#48262e,#25151b);
+}
+/* Titles stay readable even when scripting or animation is unavailable. */
+.js-motion .page h1[data-reveal],.js-motion .page h2[data-reveal]{opacity:1;transform:none;transition:none}
+@media(prefers-reduced-motion:reduce){
+.page h1,.page h2,.page h3,.page h4{animation:none!important;transition:none!important;transform:none!important}
+}

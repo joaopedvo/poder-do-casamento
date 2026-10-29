@@ -1,0 +1,26 @@
+/* Photographs and small visual anchors shared by every page and HTML edition. */
+.visual-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;flex:none;margin-bottom:20px;border:1px solid currentColor;border-radius:14px;color:var(--gold,#d8b58b)}
+.visual-icon svg{width:23px;height:23px}
+.s-cream .visual-icon{color:var(--brick,#803d42);background:rgba(128,61,66,.045)}
+.card>.visual-icon{margin-bottom:24px}
+.dayc>.visual-icon{display:flex;margin-bottom:22px}
+.visual-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,80px);align-items:center}
+.visual-copy{min-width:0}
+.visual-copy .lead{max-width:unset}
+.section-photo{margin:0;width:100%;min-width:0;overflow:hidden;border-radius:80px 18px 80px 18px;aspect-ratio:4/5;box-shadow:0 18px 42px rgba(25,11,14,.16)}
+.section-photo img{display:block;width:100%;height:100%;object-fit:cover}
+#p-home .section-photo{aspect-ratio:21/9;margin:32px 0 36px;border-radius:70px 18px 70px 18px;max-height:360px}
+#p-home .section-photo img{object-position:center 42%}
+#p-protocolo-alianca .section-photo{aspect-ratio:4/5}
+#p-circulo-da-alianca .section-photo{aspect-ratio:1/1}
+#p-para-igrejas .section-photo{aspect-ratio:5/4}
+@media(max-width:900px){
+.visual-split{grid-template-columns:1fr;gap:32px}
+.visual-split .section-photo{aspect-ratio:3/2;max-width:620px;justify-self:center}
+}
+@media(max-width:600px){
+.section-photo,.visual-split .section-photo{border-radius:48px 14px 48px 14px}
+#p-home .section-photo{aspect-ratio:3/2;border-radius:48px 14px 48px 14px;margin-block:26px}
+.visual-icon{width:40px;height:40px;border-radius:12px;margin-bottom:16px}
+.visual-icon svg{width:21px;height:21px}
+}

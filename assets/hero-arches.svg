@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 940" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="arc" x1="0" y1="0" x2="680" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ac6860" stop-opacity=".42"/>
+      <stop offset=".58" stop-color="#cba98e" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#a75855" stop-opacity=".10"/>
+    </linearGradient>
+    <linearGradient id="fine" x1="100" y1="0" x2="600" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9b564f" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#bd8d75" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#arc)" stroke-width="1.25">
+    <path d="M-304 715C-152 405-3 102 255-47c164-95 373-86 594-63"/>
+    <path d="M-269 763C-117 453 32 150 290 1c164-95 373-86 594-63"/>
+    <path d="M-234 811C-82 501 67 198 325 49c164-95 373-86 594-63"/>
+    <path d="M-199 859C-47 549 102 246 360 97c164-95 373-86 594-63"/>
+  </g>
+  <g stroke="url(#fine)" stroke-width=".8">
+    <path d="M-124 914C70 622 185 360 397 233c146-87 329-83 540-56"/>
+    <path d="M-95 940C99 648 214 386 426 259c146-87 329-83 540-56"/>
+    <path d="M-66 966C128 674 243 412 455 285c146-87 329-83 540-56"/>
+  </g>
+  <path d="M-108 144C90 83 229 94 350 174" stroke="#b67367" stroke-opacity=".18" stroke-width="1"/>
+</svg>
